@@ -4,7 +4,7 @@
 # Maintainer: Ethan Leir <eleir@qnx.com>
 pkgname=tree-sitter
 pkgver=0.25.10
-pkgrel=${pkgrel:-0}
+pkgrel=2
 pkgdesc="Incremental parsing system for programming tools"
 url="https://tree-sitter.github.io/"
 license="MIT"
@@ -56,7 +56,6 @@ grammars() {
     mkdir -p "$subpkgdir"
 }
 
-options="$options ${DISABLE_CHECK:+!check}"
 sha512sums="
 f0465a2fabe303c1b62f1f55ed08aa57372ac11370d229adcccd99b5e8067be53e92da281cdfbcd034e2ecefb33ac90a119eeac9035670ac8fbaa4242cb87a11  tree-sitter-0.25.10.tar.gz
 38e4dd95d68197bb8009f8c71d043881cb9bca2c1e2a8d2b7c12e13981b530285e8823bc63530c6c55e81551571255b63a6c6df2210e315f7138c5e3f68a0d1b  abuild-tree-sitter
